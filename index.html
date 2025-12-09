@@ -3,11 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ConsulVista provides expert consulting and advisory services specializing in multifamily repositioning and renovations. Services include due diligence, demographics studies, contract negotiations, and project management."
+    />
+    <meta
+      name="keywords"
+      content="multifamily consulting, apartment repositioning, real estate advisory, project management, due diligence"
+    />
+    <meta name="author" content="ConsulVista" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="ConsulVista - Consulting and Advisory Services"
+    />
+    <meta
+      property="og:description"
+      content="Expert consulting and advisory services specializing in multifamily repositioning and renovations."
+    />
+    <meta property="og:url" content="https://consulvista.com" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ConsulVista - Consulting and Advisory Services"
+    />
+    <meta
+      name="twitter:description"
+      content="Expert consulting and advisory services specializing in multifamily repositioning and renovations."
+    />
+
     <title>ConsulVista - Consulting and Advisory Services</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "ConsulVista",
+        "description": "Consulting and advisory services specializing in multifamily repositioning and renovations",
+        "url": "https://consulvista.com",
+        "telephone": "+19186716954",
+        "email": "info@consulvista.com",
+        "areaServed": "United States",
+        "serviceType": [
+          "Due Diligence",
+          "Demographics Studies",
+          "Contract Negotiations",
+          "Contract Review",
+          "Business Case Analysis",
+          "Capex Budget Preparations",
+          "Technical Design Evaluation",
+          "Project Management",
+          "Project Audits And Oversight"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <nav class="navbar" id="navbar">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav
+      class="navbar"
+      id="navbar"
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <div class="nav-container">
         <a href="#home" class="nav-logo">
           <img
@@ -22,22 +89,33 @@
           <span></span>
           <span></span>
         </button>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#team" class="nav-link">Team</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none">
+            <a href="#home" class="nav-link" role="menuitem">Home</a>
+          </li>
+          <li role="none">
+            <a href="#services" class="nav-link" role="menuitem">Services</a>
+          </li>
+          <li role="none">
+            <a href="#team" class="nav-link" role="menuitem">Team</a>
+          </li>
+          <li role="none">
+            <a href="#projects" class="nav-link" role="menuitem">Projects</a>
+          </li>
+          <li role="none">
+            <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <section class="hero-section" id="home">
+    <section class="hero-section" id="home" aria-label="Hero section">
       <div class="hero-image-container">
         <img
           src="assets/images/hero.webp"
-          alt="Hero image"
+          alt="ConsulVista consulting and advisory services"
           class="hero-image"
+          loading="eager"
         />
         <div class="hero-gradient"></div>
       </div>
@@ -48,10 +126,11 @@
               src="assets/images/logo.webp"
               alt="ConsulVista Logo"
               class="logo-hero"
+              loading="eager"
             />
           </div>
         </header>
-        <h2 class="hero-heading">Consulting and Advisory Services</h2>
+        <h1 class="hero-heading">Consulting and Advisory Services</h1>
         <p class="hero-description">
           Specializing but not limited to multifamily repositioning, and multi
           family renovations.
@@ -60,7 +139,7 @@
     </section>
 
     <div class="container">
-      <main>
+      <main id="main-content">
         <div class="services-section" id="services">
           <h2>Services</h2>
           <div class="services-grid">
@@ -83,13 +162,25 @@
           </p>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <img src="assets/images/team1.webp" alt="Team member in field" />
+              <img
+                src="assets/images/team1.webp"
+                alt="ConsulVista team member working in the field"
+                loading="lazy"
+              />
             </div>
             <div class="gallery-item">
-              <img src="assets/images/team2.webp" alt="Team member in office" />
+              <img
+                src="assets/images/team2.webp"
+                alt="ConsulVista team member working in the office"
+                loading="lazy"
+              />
             </div>
             <div class="gallery-item">
-              <img src="assets/images/team3.webp" alt="Team collaboration" />
+              <img
+                src="assets/images/team3.webp"
+                alt="ConsulVista team members collaborating"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -103,13 +194,15 @@
             <div class="apartment-item">
               <img
                 src="assets/images/apartment1.webp"
-                alt="Multifamily apartment complex"
+                alt="Multifamily apartment complex project by ConsulVista"
+                loading="lazy"
               />
             </div>
             <div class="apartment-item">
               <img
                 src="assets/images/apartment2.webp"
-                alt="Multifamily apartment complex"
+                alt="Multifamily apartment complex project by ConsulVista"
+                loading="lazy"
               />
             </div>
           </div>
@@ -118,8 +211,16 @@
         <div class="contact-section" id="contact">
           <h2>Contact Us</h2>
           <p>Get in touch with us today</p>
-          <a href="tel:+19186716954" class="phone-number">(918) 671-6954</a>
-          <a href="mailto:info@consulvista.com" class="email-address"
+          <a
+            href="tel:+19186716954"
+            class="phone-number"
+            aria-label="Call ConsulVista at (918) 671-6954"
+            >(918) 671-6954</a
+          >
+          <a
+            href="mailto:info@consulvista.com"
+            class="email-address"
+            aria-label="Email ConsulVista at info@consulvista.com"
             >info@consulvista.com</a
           >
         </div>

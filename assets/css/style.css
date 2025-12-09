@@ -14,6 +14,25 @@ body {
   padding-top: 80px; /* Space for fixed navbar */
 }
 
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #21638d;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #21638d;
+  outline-offset: 2px;
+}
+
 /* Navbar Styles */
 .navbar {
   position: fixed;
@@ -45,6 +64,12 @@ body {
 
 .nav-logo:hover {
   transform: scale(1.05);
+}
+
+.nav-logo:focus {
+  outline: 3px solid #21638d;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 .nav-logo-img {
@@ -100,6 +125,14 @@ body {
   color: #667eea;
 }
 
+.nav-link:focus,
+.phone-number:focus,
+.email-address:focus {
+  outline: 3px solid #21638d;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .nav-link::after {
   content: "";
   position: absolute;
@@ -124,6 +157,12 @@ body {
   cursor: pointer;
   padding: 0.5rem;
   gap: 4px;
+}
+
+.hamburger:focus {
+  outline: 3px solid #21638d;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 .hamburger span {
@@ -267,6 +306,10 @@ h1 {
   color: white;
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.hero-section h1 {
+  color: white;
 }
 
 .hero-description {
