@@ -39,7 +39,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background: white;
+  background: #fafafa;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   padding: 0;
@@ -95,7 +95,7 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   color: #212529;
-  background: white;
+  background: #fafafa;
 }
 
 .logo-hero {
@@ -379,7 +379,7 @@ h2 {
 }
 
 .service-card:hover {
-  background: #fff;
+  background: #fafafa;
   border-color: #bf472d;
   box-shadow: 0 4px 12px rgba(191, 71, 45, 0.15);
   transform: translateY(-2px);
@@ -521,7 +521,7 @@ h2 {
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background: white;
+    background: #fafafa;
     width: 100%;
     text-align: center;
     transition: left 0.3s ease;
